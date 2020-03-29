@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,24 +101,17 @@
 					<div id="mockups" class="col-lg-12">
 						<h1>MOCKUPS</h1>
 						<p>
-							Mockups used in the template are from Freepik premium category and they require a premium subscription which costs about $70/year:
+                            {% for post in posts %}
+
 							<ul>
-								<li>Iphone X front view: <a href="https://www.freepik.com/premium-psd/front-view-clay-iphone-x-mockup_2871437.htm#term=iphone%20x&page=2&position=12">https://www.freepik.com/premium-psd/front-view-clay-iphone-x-mockup_2871437.htm#term=iphone%20x&page=2&position=12</a></li>
-								<li>Iphone X isometric : <a href="https://www.freepik.com/premium-psd/isometric-minimal-clay-iphone-x-presentation-mockup_2871432.htm#term=iphone%20x&page=3&position=2">https://www.freepik.com/premium-psd/isometric-minimal-clay-iphone-x-presentation-mockup_2871432.htm#term=iphone%20x&page=3&position=2</a></li>
-								<li>Iphone X horizontal: <a href="https://www.freepik.com/premium-psd/isometric-minimal-clay-iphone-x-presentation-mockup_2871432.htm#term=iphone%20x&page=3&position=2">http://uiconstock.com/free-iphone-x-mockup-2-angles/</a></li>
+								<li>{{ post.title }}  </li>
+								<li>{{ post.author }} </li>
+								<li>{{ post.text }} </li>
 							</ul>
+                            {% endfor %}
+
 						</p>
-						<p>
-							But if you search the Internet a little longer you will also find free mockups like:
-							<ul>
-								<li><a href="https://www.anthonyboyd.graphics/mockups/minimal-clay-iphone-x-presentation-mockup-set">https://www.anthonyboyd.graphics/mockups/minimal-clay-iphone-x-presentation-mockup-set</a></li>
-								<li><a href="https://uxplanet.org/free-iphone-x-mockups-psd-sketch-4c455d74b2c3">https://uxplanet.org/free-iphone-x-mockups-psd-sketch-4c455d74b2c3</a></li>
-								<li>Iphone X horizontal: <a href="http://uiconstock.com/free-iphone-x-mockup-2-angles/">http://uiconstock.com/free-iphone-x-mockup-2-angles/</a></li>
-							</ul>
-						</p>
-						<p>
-							Illustration used for the header background is from Freepik and requires Premium Subscription: <a href="https://www.freepik.com/premium-vector/website-template-with-geometric-shape-background_2673548.htm">https://www.freepik.com/premium-vector/website-template-with-geometric-shape-background_2673548.htm</a>
-						</p>
+
 					</div> <!-- end of files structure -->
 
 
